@@ -61,3 +61,10 @@ sudo chmod +x /etc/init.d/sickchill
 
 sudo cp /opt/sickchill/contrib/runscripts/init.ubuntu /etc/init.d/sickchill
 
+git clone https://github.com/ckardaris/tormix
+
+
+cd tormix
+./install
+cd ../
+
