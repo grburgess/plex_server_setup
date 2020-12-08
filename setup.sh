@@ -1,8 +1,8 @@
-apt-get install -y direnv thefuck subversion git apt-get transmission-daemon
+sudo apt-get install -y direnv thefuck subversion git transmission-daemon
 
 git clone https://github.com/grburgess/dotfiles
 
-systemctl stop transmission-daemon
+sudo systemctl stop transmission-daemon
 
 #dpkg -i expressvpn_3.2.1.2-1_armhf.deb
 # go here: https://www.youtube.com/watch?v=FuNCu7_uYP8
@@ -21,7 +21,7 @@ sudo chmod 770 /mnt/media/torrent-inprogress
 sudo chmod 770 /mnt/media/torrent-complete
 sudo cp settings.json /etc/transmission-daemon/settings.json
 
-sudo apt-get install apt-transport-https
+sudo apt-get install -y apt-transport-https
 
 curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -
 
